@@ -22,7 +22,7 @@ class  Contrato_Cadenas<T:Activity>(val clase_actividad:Class<T>): ActivityResul
     //Si defino esta función, basicamente tendré que controlar el valor
     //del resultCode,  que será fundamentalmente
     // Activity.RESULT_OK o  Activity.RESULT_CANCELED (eso lo defino en e
-    //la actividad B, obtengo el dato que viene en el intent del 2º parametro
+    //la actividad B), obtengo el dato que viene en el intent del 2º parametro
     // y retorno ese dato como String que es lo que obtendrá el parametro del
     // la función callback que se pasa como 2º parametro a la función
     //registerForActivityResult
