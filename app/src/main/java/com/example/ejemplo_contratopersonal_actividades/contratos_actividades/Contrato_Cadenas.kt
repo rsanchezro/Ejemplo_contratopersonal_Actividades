@@ -4,7 +4,7 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import androidx.activity.result.contract.ActivityResultContract
-
+//Defino la clase Contrato_Cadenas parametrizada de un tipo que hereda de Activity porque le voy a pasar la clase actividad, como entrada tiene un String y salida un String
 class  Contrato_Cadenas<T:Activity>(val clase_actividad:Class<T>): ActivityResultContract<String, String>() {
     override fun createIntent(context: Context, input: String): Intent {
         //Aqui tendré que retornar el intent que utilizará alguien para realizar la acción
